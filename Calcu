@@ -1,0 +1,26 @@
+seg= input()
+z=("+×/-")
+a=list(z)
+x=list(seg)
+for i in a:
+    for s in x:
+        if i == s:
+            b=seg.split(i)
+            print (b)
+            g=b[0]
+            h=b[1]
+            c=int(g)
+            j=int(h)
+            if i == a[0]:
+                n=c+j
+            elif i== a[1]:
+                n=c*j
+            elif i==a[2]:
+                n=c/j
+            elif i ==a[3]:
+                n=c-j
+            else:
+                break
+print (n)
+        
+   
